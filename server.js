@@ -54,6 +54,13 @@ app.get('/about',(req,res)=>{
   });
 });
 
+app.get('/project',(req,res)=>{
+  //res.send("about page");
+  res.render('project.hbs',{
+    pageTitle :'project page',
+  });
+});
+
 
 app.listen(port,()=>{
   console.log(`app is running on port ${port}`);
